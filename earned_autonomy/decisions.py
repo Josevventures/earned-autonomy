@@ -95,6 +95,8 @@ def record_outcome(ledger: Ledger, policy: Policy, outcome_id: str, action_type:
 def answer_graduation(ledger: Ledger, policy: Policy, action_type: str, call: str, by: str = "user",
                       note: str = "", at: str | None = None) -> Result:
     name, tier = _resolve(policy, action_type)
+    if tier is not Tier.TIER1:
+        raise GuardRefusal(f"{name} is Tier {int(tier)}: only Tier 1 types can graduate")
     st = evaluate(policy, ledger.records())[name]
     if st.pending_proposal is None:
         raise GuardRefusal(f"{name} has no graduation proposal waiting for an answer (status: {st.status.value})")

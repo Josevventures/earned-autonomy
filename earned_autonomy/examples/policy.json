@@ -1,0 +1,21 @@
+{
+  "rules": {"window": 15, "threshold": 0.9, "demote_after": 2},
+  "types": {
+    "tier0": [
+      "Read-only research note"
+    ],
+    "tier1": [
+      "Trash a low-value message",
+      "Archive a promotional message",
+      "Snooze a non-urgent thread",
+      "Decline a clearly conflicting invite"
+    ],
+    "tier2": [
+      "Send a message on the user's behalf",
+      "Cancel or move a meeting with others",
+      "Any financial action",
+      "Submit an application or form",
+      "Anything irreversible or reputation-facing"
+    ]
+  }
+}

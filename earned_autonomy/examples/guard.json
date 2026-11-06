@@ -1,0 +1,9 @@
+{
+  "fallbacks": {"trash": "archive"},
+  "categories": [
+    {"name": "known contact", "addresses": ["friend@mail.example.com", "relative@mail.example.org"]},
+    {"name": "bank or creditor", "domains": ["examplebank.test", "card-issuer.example"]},
+    {"name": "utility or insurer", "domains": ["power-co.example", "insurer.example"]},
+    {"name": "government", "suffixes": [".gov"]}
+  ]
+}
