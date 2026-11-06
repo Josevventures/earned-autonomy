@@ -1,0 +1,28 @@
+[project]
+name = "earned-autonomy"
+version = "0.1.0"
+description = "Per-action-type autonomy for AI agents, earned from logged human decisions: tiers, graduation and demotion rules, an append-only decision ledger, and permission lanes for dispatched jobs."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+earned-autonomy = "earned_autonomy.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["earned_autonomy*"]
+
+[tool.setuptools.package-data]
+earned_autonomy = ["examples/*.json", "examples/*.jsonl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+faulthandler_timeout = 120
