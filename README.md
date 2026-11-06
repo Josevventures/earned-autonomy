@@ -20,7 +20,8 @@ yes or no from me, which is safe and also exhausting. Granting it broad permissi
 mistake. So I set a rule before it went live: trust is earned per action type, from a rolling window of my real
 decisions, and the agent can propose a graduation but never grant one to itself.
 
-Here is where that stands, read from the private system's tier map and decision log on 2026-11-06:
+<!-- evidence:start -->
+Here is where that stands, read from the private system's tier map and decision log as of 2026-11-06:
 
 - **57 answers logged** between 2026-09-17 and 2026-10-31, across 4 action types. 56 are decisions; the 57th is
   a graduation answer that the bug described below miscounted as a decision.
@@ -33,6 +34,7 @@ Here is where that stands, read from the private system's tier map and decision 
 - **Tier 2 never graduates.** Five categories are permanently gated; 3 Tier 2 decisions were logged and none of
   them counts toward anything.
 - **Demotions to date: 0.** The demotion path is exercised by the tests and the demo, not yet by real data.
+<!-- evidence:end -->
 
 The numbers are small, and the box under "Limits" says exactly how small.
 
